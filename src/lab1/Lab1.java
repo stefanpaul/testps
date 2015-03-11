@@ -19,10 +19,13 @@ public class Lab1 {
         Cart cart = new Cart();
         Laptop prod1 = new Laptop("HP",1000);
         Mobile prod2 = new Mobile("iPhone",3500);
+	Mobile prod3 = new Mobile("Samsung g6",3232);
         prod1.setProcessor("2.4 GHZ");
         prod1.setScreenSize(19);
         prod2.setMemory(100);
         prod2.setOS("Winbdows 10");
+	prod3.setMemory(32);
+	prod3.setOS("Android");
         cart.addToCart(prod1,2);
         cart.addToCart(prod2,2);
         System.out.println("Pretul este "+cart.getTotalPrice());
